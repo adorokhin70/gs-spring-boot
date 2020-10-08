@@ -5,10 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 public class HelloController {
+
+    public static final String RESULT = "gitpod test demo for Qarik!";
     
     @RequestMapping("/")
     public String index() {
-        return "Greetings from Spring Boot!";
+        return RESULT;
     }
     
 }
